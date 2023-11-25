@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="assets/me.png">
+    <link rel="shortcut icon" href="assets/me.png" type="image/x-icon">
+
+    <link rel="alternate" href="https://angelaltieri.netlify.app" hreflang="es" />
+    <link rel="alternate" href="https://angelaltieri.netlify.app/en" hreflang="en" />
+    <link rel="alternate" href="https://angelaltieri.netlify.app/en" hreflang="x-default" />
+
+    <meta name="description" content="Estudiante de Sistemas y Desarrollador Web Trainee.">
+    <meta name="keywords" content="Portfolio, Desarrollo Web, Ángel Altieri">
+    <meta name="author" content="Ángel Valentín Altieri">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ángel Altieri">
+    <meta property="og:description" content="Estudiante de Sistemas y Desarrollador Web Trainee.">
+    <meta property="og:image" content="assets/me.png">
+    <meta property="og:url" content="https://angelaltieri.netlify.app/">
+    <meta property="og:locale" content="es_ES" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <title>Ángel Altieri</title>
+</head>
+
+<body>
+    
+    <div id="particles-js">
+        <header class="header">
+
+        <section class="hero animation-header">
+            <p>Portfolio.</p>
+
+            <i class="bi bi-list hamburguer"></i>
+
+            <nav class="nav">
+                <i class="bi bi-x x"></i>
+                <section class="nav_section">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#sobremi">Sobre mí</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#contacto">Contacto</a>
+                </section>
+            </nav>
+        </section>
+
+        <section id="inicio">
+            <article class="presentation-img">
+                <img src="assets/me.png" alt="Imágen de mi cara" />
+            </article>
+
+            <article class="presentation-text">
+                <div class="presentation-name">
+                    <p>Hola, soy</p>
+                    <div class="flex-mano">
+                        <h1>Ángel Altieri</h1>
+                        <span class="manito">👋</span>
+                    </div>
+                </div>
+
+                <h2>Estudiante de Sistemas y Desarrollador Web front-end Trainee</h2>
+
+                <div class="presentation-buttons">
+                    <a href="mi-cv.pdf" target="_blank">Descargar CV</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </article>
+        </section>
+
+        <a class="mover">
+            <i class="bi bi-mouse mouse"></i>
+        </a>
+
+        </header>
+    </div>
+
+    <main class="main">
+
+        <section id="sobremi" class="animation-scroll">
+            <h3>Sobre mí</h3>
+
+            <p>
+                Tengo 19 años y estoy en constante aprendizaje, tanto en la
+                universidad como autodidacta. Al interesarme por la rama del
+                Desarrollo Web, durante mi auto capacitación front-end aprendí a
+                analizar, diseñar e implementar sitios web, a crear soluciones web
+                dinámicas y también crear SPA consumiendo APIS.
+            </p>
+        </section>
+
+        <section id="habilidades" class="habilidades animation-scroll">
+            <h3>Habilidades</h3>
+
+            <article>
+                <div data-tooltip="HTML">
+                    <img loading="lazy" src="assets/html.png" alt="Icono de HTML" />
+                </div>
+                <div data-tooltip="CSS">
+                    <img loading="lazy" src="assets/css.png" alt="Icono de CSS" />
+                </div>
+                <div data-tooltip="SASS">
+                    <img loading="lazy" src="assets/sass.png" alt="Icono de SASS" />
+                </div>
+                <div data-tooltip="Tailwind">
+                    <img loading="lazy" src="assets/tailwind.png" alt="Icono de Tailwind" />
+                </div>
+                <div data-tooltip="JavaScript">
+                    <img loading="lazy" src="assets/js.png" alt="Icono de JavaScript" />
+                </div>
+                <div data-tooltip="React">
+                    <img loading="lazy" src="assets/react.png" alt="Icono de React" />
+                </div>
+                <div data-tooltip="Git">
+                    <img loading="lazy" src="assets/git.png" alt="Icono de Git" />
+                </div>
+                <div data-tooltip="Firebase">
+                    <img loading="lazy" src="assets/firebase.png" alt="Icono de Firebase" />
+                </div>
+                <div data-tooltip="Consumo de APIS">
+                    <img loading="lazy" src="assets/api.png" alt="Icono de una API" />
+                </div>
+                <div data-tooltip="Diseño Responsivo">
+                    <img loading="lazy" src="assets/responsive.png" alt="Icono de Diseño Responsivo" />
+                </div>
+                <div data-tooltip="SEO">
+                    <img loading="lazy" src="assets/seo.png" alt="Icono de SEO" />
+                </div>
+            </article>
+        </section>
+
+        <section id="proyectos" class="proyectos-container">
+            <h3>Proyectos</h3>
+
+            <article class="proyectos">
+
+                <div class="proyecto-card animation-scroll">
+                    <img loading="lazy" src="assets/app-games.jpg"
+                        alt="Imagen de una sitio web creado por mi sobre juegos" />
+                    <article class="proyecto-card-texts">
+                        <h4 class="name-card">App game</h4>
+                        <p class="card-description">
+                            Proyecto acerca de datos de videojuegos.
+                        </p>
+                        <ul class="proyecto-ul">
+                            <li>React</li>
+                            <li>SASS</li>
+                            <li>RAWG API</li>
+                        </ul>
+                        <div class="proyecto-buttons">
+                            <a target="_blank" href="https://github.com/angelvalentinn/app-games"><i
+                                    class="bi bi-github" data-tooltip="Ver repositorio"></i></a>
+                            <a target="_blank" href="https://game-app-react-altieri.netlify.app/"><i class="bi bi-link"
+                                    data-tooltip="Ver Deploy"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="proyecto-card animation-scroll">
+                    <img loading="lazy" src="assets/mercado-libre.jpg"
+                        alt="Imagen de una sitio web e-commerce creado por mi" />
+                    <article class="proyecto-card-texts">
+                        <h4 class="name-card">E-commerce</h4>
+                        <p class="card-description">
+                            E-commerce copia UI de mercadolibre. Proyecto final de
+                            CoderHouse.
+                        </p>
+                        <ul class="proyecto-ul">
+                            <li>React</li>
+                            <li>SASS</li>
+                            <li>Firebase</li>
+                        </ul>
+                        <div class="proyecto-buttons">
+                            <a target="_blank" href="https://github.com/angelvalentinn/proyecto-final-coderhouse"><i
+                                    class="bi bi-github" data-tooltip="Ver repositorio"></i></a>
+                            <a target="_blank" href="https://ecommerce-altieri.netlify.app/"><i class="bi bi-link"
+                                    data-tooltip="Ver Deploy"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="proyecto-card animation-scroll">
+                    <img loading="lazy" src="assets/movie-app.jpg"
+                        alt="Imagen de una sitio web creado por mi sobre películas" />
+                    <article class="proyecto-card-texts">
+                        <h4 class="name-card">Movie app</h4>
+                        <p class="card-description">
+                            Proyecto acerca de datos de películas.
+                        </p>
+                        <ul class="proyecto-ul">
+                            <li>React</li>
+                            <li>Tailwind</li>
+                            <li>TMB API</li>
+                        </ul>
+                        <div class="proyecto-buttons">
+                            <a target="_blank" href="https://github.com/angelvalentinn/movie-app-react"><i
+                                    class="bi bi-github" data-tooltip="Ver repositorio"></i></a>
+                            <a target="_blank" href="https://movie-app-react-angel.netlify.app/"><i class="bi bi-link"
+                                    data-tooltip="Ver Deploy"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="proyecto-card animation-scroll">
+                    <img loading="lazy" src="assets/memogame.png" alt="Imagen de minijuego memotest" />
+                    <article class="proyecto-card-texts">
+                        <h4 class="name-card">Memo test</h4>
+                        <p class="card-description">
+                            Proyecto del juego Memo test. Mi primer proyecto en React.
+                        </p>
+                        <ul class="proyecto-ul">
+                            <li>React</li>
+                            <li>Tailwind</li>
+                        </ul>
+                        <div class="proyecto-buttons">
+                            <a target="_blank" href="https://github.com/angelvalentinn/memotest"><i class="bi bi-github"
+                                    data-tooltip="Ver repositorio"></i></a>
+                            <a target="_blank" href="https://memotest-altieri.netlify.app/"><i class="bi bi-link"
+                                    data-tooltip="Ver Deploy"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="proyecto-card animation-scroll">
+                    <img loading="lazy" src="assets/calculadora.png" alt="Imagen de mi proyecto calculadora" />
+                    <article class="proyecto-card-texts">
+                        <h4 class="name-card">Calculadora</h4>
+                        <p class="card-description">Proyecto de calculadora.</p>
+                        <ul class="proyecto-ul">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <div class="proyecto-buttons">
+                            <a target="_blank" href="https://github.com/angelvalentinn/Calculadora"><i
+                                    class="bi bi-github" data-tooltip="Ver repositorio"></i></a>
+                            <a target="_blank" href="https://angelvalentinn.github.io/Calculadora/"><i
+                                    class="bi bi-link" data-tooltip="Ver Deploy"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="proyecto-card animation-scroll">
+                    <img loading="lazy" src="assets/ppot.png" alt="Imagen de mi proyecto rock paper and scissor" />
+                    <article class="proyecto-card-texts">
+                        <h4 class="name-card">Piedra, papel o tijera</h4>
+                        <p class="card-description">
+                            Proyecto sobre piedra, papel o tijera.
+                        </p>
+                        <ul class="proyecto-ul">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <div class="proyecto-buttons">
+                            <a target="_blank" href="https://github.com/angelvalentinn/rock-paper-scissor"><i
+                                    class="bi bi-github" data-tooltip="Ver repositorio"></i></a>
+                            <a target="_blank" href="https://angelvalentinn.github.io/rock-paper-scissor/"><i
+                                    class="bi bi-link" data-tooltip="Ver Deploy"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="proyecto-card animation-scroll">
+                    <img loading="lazy" src="assets/app-clima.png" alt="Imagen de mi proyecto buscador de Clima" />
+                    <article class="proyecto-card-texts">
+                        <h4 class="name-card">App Clima</h4>
+                        <p class="card-description">Proyecto sobre buscador de Clima.</p>
+                        <ul class="proyecto-ul">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Weather API</li>
+                        </ul>
+                        <div class="proyecto-buttons">
+                            <a target="_blank" href="https://github.com/angelvalentinn/app-clima"><i
+                                    class="bi bi-github" data-tooltip="Ver repositorio"></i></a>
+                            <a target="_blank" href="https://angelvalentinn.github.io/app-clima/"><i class="bi bi-link"
+                                    data-tooltip="Ver Deploy"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="proyecto-card animation-scroll">
+                    <img loading="lazy" src="assets/todolist.png" alt="Imagen de mi proyecto To do list" />
+                    <article class="proyecto-card-texts">
+                        <h4 class="name-card">To do List</h4>
+                        <p class="card-description">
+                            Proyecto CRUD persistente con Local Storage.
+                        </p>
+                        <ul class="proyecto-ul">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <div class="proyecto-buttons">
+                            <a target="_blank" href="https://github.com/angelvalentinn/todolist"><i class="bi bi-github"
+                                    data-tooltip="Ver repositorio"></i></a>
+                            <a target="_blank" href="https://angelvalentinn.github.io/todolist/"><i class="bi bi-link"
+                                    data-tooltip="Ver Deploy"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="proyecto-card animation-scroll">
+                    <img src="assets/cart-js.jpg" alt="Imagen de mi proyecto e-commerce con JavaScript" />
+                    <article class="proyecto-card-texts">
+                        <h4 class="name-card">E-commerce JS</h4>
+                        <p class="card-description">
+                            Carrito de compras sobre cartas del fifa.
+                        </p>
+                        <ul class="proyecto-ul">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <div class="proyecto-buttons">
+                            <a target="_blank" href="https://github.com/angelvalentinn/eCommerce"><i
+                                    class="bi bi-github" data-tooltip="Ver repositorio"></i></a>
+                            <a target="_blank" href="https://angelvalentinn.github.io/eCommerce/"><i class="bi bi-link"
+                                    data-tooltip="Ver Deploy"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+            </article>
+        </section>
+
+        <footer id="contacto">
+            <section>
+                <h3>Contacto</h3>
+
+                <article class="redes">
+                    <a href="https://github.com/angelvalentinn" target="_blank"><i class="bi bi-github" data-tooltip="GitHub"></i></a>
+                    <a href="https://www.linkedin.com/in/%C3%A1ngel-valent%C3%ADn-altieri-a319a0256/" target="_blank"><i class="bi bi-linkedin" data-tooltip="Linkedin"></i></a>
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSKhbqZzPQmvZgZVTBdSxsMhbjfkdktrBkHMbtXlsjSCDJcMMPchZGcvbwxQLqNxCHRVjQrP" target="_blank"><i class="bi bi-envelope" data-tooltip="Gmail"></i></a>
+                </article>
+            </section>
+        </footer>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <script src="js/script.js"></script>
+</body>
+
+</html>
