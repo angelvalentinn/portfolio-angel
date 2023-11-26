@@ -23,9 +23,7 @@ body {
     padding: 0 0rem 1rem 0rem;
     background-color: var(--clr-bg);
     color: var(--clr-txt);
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
+
 }
 
 a {
@@ -63,9 +61,11 @@ li {
 }
 
 .header {
+    padding-top: 40px;
     position: absolute;
     inset: 0;
     text-align: center;
+    display: flex;
 
     & .hero {
         padding: 1rem 0;
@@ -124,7 +124,6 @@ li {
     }
 
     & section#inicio {
-        padding-top: 4rem;
         padding-inline: 1rem;
         display: flex;
         flex-direction: column;
@@ -180,6 +179,14 @@ li {
                 color: var(--clr-primary);
                 font-weight: bold;
             }
+
+            & .manito {
+                animation-name: wave;
+                animation-duration: 2.5s;
+                animation-iteration-count: infinite;
+                transform-origin: 70% 70%;
+                display: inline-block;
+            }
         }
 
         & .presentation-name {
@@ -227,6 +234,7 @@ li {
 /* ------------------- MAIN ---------------------- */
 
 .main {
+
     max-width: 1200px;
     margin: 0 auto;
 
@@ -501,6 +509,33 @@ li {
     animation-range: entry 20% cover 35%;
 }
 
+@keyframes wave {
+    0% {
+        transform: rotate( 0.0deg);
+    }
+    10% {
+        transform: rotate(14.0deg);
+    }
+    20% {
+        transform: rotate(-8.0deg);
+    }
+    30% {
+        transform: rotate(14.0deg);
+    }
+    40% {
+        transform: rotate(-4.0deg);
+    }
+    50% {
+        transform: rotate(10.0deg);
+    }
+    60% {
+        transform: rotate( 0.0deg);
+    }
+    100% {
+        transform: rotate( 0.0deg);
+    }
+}
+
 @keyframes scroll-animation {
     from {
         opacity: 0;
@@ -529,7 +564,8 @@ li {
         text-align: left;
         display: flex;
         flex-direction: column;
-        gap: 6rem;
+        justify-content: center;
+        gap: 0rem;
 
         & .hero {
             background-color:transparent;
@@ -537,9 +573,18 @@ li {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            position: sticky;
+            padding: 2rem 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            left: 0;
+            right: 0;
             top: 0;
-            z-index: 200;   
+            z-index: 200;
+            animation: enhance-header linear both;
+            animation-timeline: scroll(root);
+            animation-range: 0 200px;   
         
             & p {
                 padding-left: 1rem;
@@ -568,7 +613,7 @@ li {
                 & .x {
                     position: absolute;
                     top: 20px;
-                    right: 17px;
+                    right: 30px;
                     font-size: 2rem;
                     cursor: pointer;
                 }
